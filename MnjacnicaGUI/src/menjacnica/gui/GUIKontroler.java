@@ -3,6 +3,7 @@ package menjacnica.gui;
 import java.awt.EventQueue;
 import java.io.File;
 
+import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
@@ -12,6 +13,7 @@ public class GUIKontroler {
 	
 	private static MenjacnicaGUI menjacnica;
 	private static DodajKursGUI dodajKurs;
+	private static ObrisiKursGUI obrisiKurs;
 	
 	/**
 	 * Launch the application.
@@ -89,6 +91,23 @@ public class GUIKontroler {
 	
 	public static void textMenjacnica(String s){
 		upisi(menjacnica.getTextArea().getText() + "\n" + s, menjacnica.getTextArea());
+	}
+	
+	public static void otvoriObrisiKurs(){
+		GUIKontroler.obrisiKurs = new ObrisiKursGUI();
+		obrisiKurs.setVisible(true);
+	}
+	public static void zatvoriObrisiKurs(){
+		obrisiKurs.dispose();
+		obrisiKurs = null;
+	}
+	
+	public static void omoguciDugme(JButton btnObrisi){
+		if(btnObrisi.isEnabled() == true){
+			btnObrisi.setEnabled(false);
+		}else{
+			btnObrisi.setEnabled(true);
+		}
 	}
 	
 }

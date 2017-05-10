@@ -146,6 +146,11 @@ public class MenjacnicaGUI extends JFrame {
 	private JButton getBtnIzbrisiKurs() {
 		if (btnIzbrisiKurs == null) {
 			btnIzbrisiKurs = new JButton("Izbrisi kurs");
+			btnIzbrisiKurs.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					GUIKontroler.otvoriObrisiKurs();
+				}
+			});
 		}
 		return btnIzbrisiKurs;
 	}
@@ -281,6 +286,11 @@ public class MenjacnicaGUI extends JFrame {
 	private JMenuItem getMntmIzbrisiKurs() {
 		if (mntmIzbrisiKurs == null) {
 			mntmIzbrisiKurs = new JMenuItem("Izbrisi kurs");
+			mntmIzbrisiKurs.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					GUIKontroler.otvoriObrisiKurs();
+				}
+			});
 		}
 		return mntmIzbrisiKurs;
 	}
