@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 public class GUIKontroler {
 	
 	private static MenjacnicaGUI menjacnica;
+	private static DodajKursGUI dodajKurs;
 	
 	/**
 	 * Launch the application.
@@ -74,6 +75,20 @@ public class GUIKontroler {
 				"Autor : Uros Momcilovic" + "\n" + 
 		"Fakulteta Organizacionih nauka." + "\n" + 
 		"broj indeksa: 1030/16");
+	}
+	
+	public static void otvoriDodajKurs(){
+		GUIKontroler.dodajKurs = new DodajKursGUI();
+		dodajKurs.setVisible(true);
+	}
+	
+	public static void zatvoriDodajKurs(){
+		dodajKurs.dispose();
+		dodajKurs = null;
+	}
+	
+	public static void textMenjacnica(String s){
+		upisi(menjacnica.getTextArea().getText() + "\n" + s, menjacnica.getTextArea());
 	}
 	
 }
