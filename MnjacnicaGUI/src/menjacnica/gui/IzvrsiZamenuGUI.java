@@ -69,6 +69,7 @@ public class IzvrsiZamenuGUI extends JFrame {
 		contentPane.add(getSlider());
 		contentPane.add(getBtnIzvrsiZamenu());
 		contentPane.add(getBtnOdustani());
+		setLocationRelativeTo(null);
 	}
 	private JLabel getLblProdajniKurs() {
 		if (lblProdajniKurs == null) {

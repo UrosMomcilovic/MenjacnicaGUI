@@ -64,6 +64,7 @@ public class ObrisiKursGUI extends JFrame {
 		contentPane.add(getChckbxZaistaObrisi());
 		contentPane.add(getBtnObrisi());
 		contentPane.add(getBtnOdustani());
+		setLocationRelativeTo(null);
 	}
 	private JLabel getLblSifra() {
 		if (lblSifra == null) {
@@ -110,6 +111,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldSifra() {
 		if (textFieldSifra == null) {
 			textFieldSifra = new JTextField();
+			textFieldSifra.setEnabled(false);
 			textFieldSifra.setBounds(48, 48, 116, 22);
 			textFieldSifra.setColumns(10);
 		}
@@ -118,6 +120,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldNaziv() {
 		if (textFieldNaziv == null) {
 			textFieldNaziv = new JTextField();
+			textFieldNaziv.setEnabled(false);
 			textFieldNaziv.setBounds(251, 48, 116, 22);
 			textFieldNaziv.setColumns(10);
 		}
@@ -126,6 +129,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldPK() {
 		if (textFieldPK == null) {
 			textFieldPK = new JTextField();
+			textFieldPK.setEnabled(false);
 			textFieldPK.setBounds(48, 108, 116, 22);
 			textFieldPK.setColumns(10);
 		}
@@ -134,6 +138,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldKK() {
 		if (textFieldKK == null) {
 			textFieldKK = new JTextField();
+			textFieldKK.setEnabled(false);
 			textFieldKK.setBounds(251, 108, 116, 22);
 			textFieldKK.setColumns(10);
 		}
@@ -142,6 +147,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldSK() {
 		if (textFieldSK == null) {
 			textFieldSK = new JTextField();
+			textFieldSK.setEnabled(false);
 			textFieldSK.setBounds(48, 174, 116, 22);
 			textFieldSK.setColumns(10);
 		}
@@ -150,6 +156,7 @@ public class ObrisiKursGUI extends JFrame {
 	private JTextField getTextFieldSNaziv() {
 		if (textFieldSNaziv == null) {
 			textFieldSNaziv = new JTextField();
+			textFieldSNaziv.setEnabled(false);
 			textFieldSNaziv.setBounds(251, 174, 116, 22);
 			textFieldSNaziv.setColumns(10);
 		}

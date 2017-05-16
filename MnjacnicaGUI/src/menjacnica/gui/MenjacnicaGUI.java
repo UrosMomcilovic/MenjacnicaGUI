@@ -81,6 +81,7 @@ public class MenjacnicaGUI extends JFrame {
 		contentPane.add(getScrollPane(), BorderLayout.CENTER);
 		contentPane.add(getPanel(), BorderLayout.EAST);
 		contentPane.add(getScrollPane_1(), BorderLayout.SOUTH);
+		setLocationRelativeTo(null);
 	}
 
 	private JScrollPane getScrollPane() {
@@ -218,7 +219,7 @@ public class MenjacnicaGUI extends JFrame {
 					}
 				}
 			});
-			mntmOpen.setIcon(new ImageIcon(MenjacnicaGUI.class.getResource("/com/sun/java/swing/plaf/windows/icons/File.gif")));
+			mntmOpen.setIcon(new ImageIcon(MenjacnicaGUI.class.getResource("/icons/openicon.png")));
 			mntmOpen.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_MASK));
 		}
 		return mntmOpen;
@@ -234,7 +235,7 @@ public class MenjacnicaGUI extends JFrame {
 					}
 				}
 			});
-			mntmSave.setIcon(new ImageIcon(MenjacnicaGUI.class.getResource("/com/sun/java/swing/plaf/windows/icons/FloppyDrive.gif")));
+			mntmSave.setIcon(new ImageIcon(MenjacnicaGUI.class.getResource("/icons/saveicon.png")));
 			mntmSave.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK));
 		}
 		return mntmSave;
@@ -242,6 +243,7 @@ public class MenjacnicaGUI extends JFrame {
 	private JMenuItem getMntmExit() {
 		if (mntmExit == null) {
 			mntmExit = new JMenuItem("Exit");
+			mntmExit.setIcon(new ImageIcon(MenjacnicaGUI.class.getResource("/icons/exiticon.png")));
 			mntmExit.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					GUIKontroler.izlaz();
